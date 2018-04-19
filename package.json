@@ -1,0 +1,21 @@
+{
+  "name": "photo_processing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "photo_processing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "image",
+    "zip",
+    "compress",
+    "photo",
+    "minifier"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "exif-js": "^2.3.0"
+  }
+}
