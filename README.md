@@ -1,38 +1,39 @@
-# Photo Processing
+# Image File Compress
 
-You can use this in browser to compress any image when the image as upload is to large.
+Minifiy and cut down image in the browser when it is so large.
+Then it will solve that image uploads by iOS is rotated with gyroscope.
 
 ## Install
 
 ```
-npm install photo_processing --save
-```
-
-and then in browser
-
-```html
-<script src="YourPath/photo_processing.js"></script>
+npm install image-file-compress --save
 ```
 
 ## Usage
 
 ```js
-var pp = new photo_processing( {
+import compress from 'compress';
+```
+
+```js
+compress( '[src]', {
     rotate : true,
     zoom: true,
-    zoom_width: 800,
-    zoom_height: 600,
-})
-
-pp.processing( document.getElementById( 'YourFileInputID' ).files[0], function( base64_file ) {
-    // output image by base64.
+    max_width: 800,
+    max_height: 600,
 } )
+.then( res => {
+    // res.path : <base64>
+    // res.data : <blob>
+} );;
 ```
 
 or just only:
 
 ```js
-var pp = new photo_processing( {
-    zoom_width: 800,
-} );
+compress( '[src]', {
+    max_width: 800,
+} ).then( <then> );
 ```
+
+- The ``[src]`` use string as URL or File object from ``input[type='file']``, etc.
