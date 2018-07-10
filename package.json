@@ -1,8 +1,8 @@
 {
-  "name": "photo_processing",
+  "name": "image-file-compress",
   "version": "2.0.0",
   "description": "",
-  "main": "photo_processing.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
@@ -11,10 +11,18 @@
   },
   "keywords": [
     "image",
-    "zip",
     "compress",
     "photo",
-    "minifier"
+    "minifier",
+    "browser",
+    "upload image",
+    "img",
+    "compress image",
+    "cut down",
+    "cut image",
+    "iOS image upload",
+    "file upload",
+    "gyroscope"
   ],
   "author": "",
   "license": "ISC",
