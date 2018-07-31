@@ -21,6 +21,7 @@ compress( '[src]', {
     zoom: true,
     max_width: 800,
     max_height: 600,
+    output_type : 'image/jpg',
 } )
 .then( res => {
     // res.path : <base64>
