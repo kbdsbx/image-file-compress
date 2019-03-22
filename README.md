@@ -5,14 +5,14 @@ Then it will solve that image uploads by iOS is rotated with gyroscope.
 
 ## Install
 
-```
+```bash
 npm install image-file-compress --save
 ```
 
 ## Usage
 
 ```js
-import compress from 'compress';
+import compress from 'image-file-compress';
 ```
 
 ```js
@@ -26,7 +26,7 @@ compress( '[src]', {
 .then( res => {
     // res.path : <base64>
     // res.data : <blob>
-} );;
+} );
 ```
 
 or just only:

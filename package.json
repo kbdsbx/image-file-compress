@@ -24,6 +24,10 @@
     "file upload",
     "gyroscope"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbdsbx/image-file-compress.git"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
